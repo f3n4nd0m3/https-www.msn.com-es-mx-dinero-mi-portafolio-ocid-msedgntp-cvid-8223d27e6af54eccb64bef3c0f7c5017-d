@@ -1,2 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<settings><bdch><KeepDumps>0</KeepDumps><StartBDReinit>1</StartBDReinit><BDReinitPath>C:\Program Files\Bitdefender\Bitdefender Security\antispam32\BDReinit.exe</BDReinitPath><BDncPath>C:\Program Files\Bitdefender\Bitdefender Security\antispam32\bdnc.dll</BDncPath><PassUnhandledExceptionToOS>0</PassUnhandledExceptionToOS><UseWer>0</UseWer></bdch><bdreinit><Fingerprint>HKEY_LOCAL_MACHINE\Software\Bitdefender\Fingerprint</Fingerprint><ProductVersion>HKEY_LOCAL_MACHINE\Software\Bitdefender\About\ProductVersion</ProductVersion><BDSubWizPath>C:\Program Files\Bitdefender\Bitdefender Security\antispam32\BdSubWiz.exe</BDSubWizPath><BdecPath>C:\Program Files\Bitdefender\Bitdefender Security\antispam32\bdec.dll</BdecPath><AnonId>05bb26c4950b0b3cdce646a81b334c061671c433</AnonId><AppId>com.bitdefender.cl</AppId><BdecSettingsFileName>bdch_bdec.ini</BdecSettingsFileName><SubmitCrashEvent>1</SubmitCrashEvent><ProductIdentifier>com.bitdefender.cl_26</ProductIdentifier><RestartCrashNumber>3</RestartCrashNumber><CompanyName>Bitdefender</CompanyName><DumpPath>C:\ProgramData\Bitdefender\Desktop\Temp</DumpPath><DontSubmitDumps>0</DontSubmitDumps><Lang>ES</Lang><Email>bdch@bitdefender.com</Email><LiveSrvPath>SOFTWARE\Bitdefender\Livesrv</LiveSrvPath><SilentSubmit>0</SilentSubmit><CompIDPath></CompIDPath><CrashInfoPath></CrashInfoPath></bdreinit></settings>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+    <bdch>
+        <KeepDumps>0</KeepDumps>
+        <StartBDReinit>1</StartBDReinit>
+        <BDReinitPath>C:\Program Files\Bitdefender Agent\26.0.1.233\BDReinit.exe</BDReinitPath>
+        <BDncPath>C:\Program Files\Bitdefender Agent\26.0.1.233\bdnc.dll</BDncPath>
+        <PassUnhandledExceptionToOS>0</PassUnhandledExceptionToOS>
+        <UseWer>0</UseWer>
+        <DbgDllsPath></DbgDllsPath>
+        <proxy>
+            <ip></ip>
+            <username></username>
+            <password></password>
+        </proxy>
+    </bdch>
+    <bdreinit>
+        <ProductIdentifier>com.bitdefender.agent</ProductIdentifier>
+        <RestartCrashNumber>3</RestartCrashNumber>
+        <BDSubWizPath>C:\Program Files\Bitdefender Agent\26.0.1.233\BdSubWiz.exe</BDSubWizPath>
+        <DontSubmitDumps>0</DontSubmitDumps>
+        <Lang>en</Lang>
+        <Email>bdch@bitdefender.com</Email>
+        <LiveSrvPath>SOFTWARE\BitdefenderBox\Livesrv</LiveSrvPath>
+        <SilentSubmit>0</SilentSubmit>
+        <AnonId>05bb26c4950b0b3cdce646a81b334c061671c433</AnonId>
+        <AppId>com.bitdefender.agent</AppId>
+        <Fingerprint>HKEY_LOCAL_MACHINE\Software\Bitdefender Agent\Fingerprint</Fingerprint>
+        <BdecPath>C:\Program Files\Bitdefender Agent\26.0.1.233\bdec.dll</BdecPath>
+        <BdecSettingsFileName>bdch_bdec.ini</BdecSettingsFileName>
+        <SubmitCrashEvent>1</SubmitCrashEvent>
+        <CompanyName>Bitdefender</CompanyName>
+        <ProductVersion>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Bitdefender Agent\Install\ProductVersion</ProductVersion>
+        <SendNpcommExcludeMsg>0</SendNpcommExcludeMsg>
+        <SilentSubmitAddScanFiles>0</SilentSubmitAddScanFiles>
+        <SilentSubmitFullDump>0</SilentSubmitFullDump>
+        <SubmitTimeout>600</SubmitTimeout>
+        <ComputerID></ComputerID>
+        <QueryNTFSChanges>0</QueryNTFSChanges>
+        <ProductName></ProductName>
+        <Locale></Locale>
+        <MachineId></MachineId>
+    </bdreinit>
+</settings>

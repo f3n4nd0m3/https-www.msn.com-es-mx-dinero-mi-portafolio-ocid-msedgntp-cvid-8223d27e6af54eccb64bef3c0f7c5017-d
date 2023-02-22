@@ -1,0 +1,35 @@
+{
+	"service":
+	{
+		"name":"ProductAgentService",
+		"display_name":"Bitdefender Product Agent Service",
+		"description":"Bitdefender Product Agent Service"
+	},
+	
+	"partner_id":"com.bitdefender",
+	"app_id":"com.bitdefender.agent",
+	
+	"regpath":
+	{
+		"product":"SOFTWARE\\Bitdefender Agent",
+		"modules":"SOFTWARE\\Bitdefender Agent\\Modules"
+	},
+
+	"update": "https://download.bitdefender.com/windows/desktop/connect/cl/2016/update.json",
+
+	"login":
+	{
+		"when": "2",
+		"url": "https://login.bitdefender.com/classicLine/",
+		"redirect": "native://com.bitdefender.agent",
+		"encode_redirect": "1",
+		"signup_url": "https://login.bitdefender.com/classicLine/signup.html",
+		"redeem_url": "https://arca.bitdefender.com/",
+		"use_redeem": "0",
+		"url_params":
+		{
+		}
+	},
+	
+	"ieupgrade": "https://support.microsoft.com/en-us/help/18520/download-internet-explorer-11-offline-installer"
+}

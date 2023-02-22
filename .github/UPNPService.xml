@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+	<specVersion>
+		<major>1</major>
+		<minor>0</minor>
+	</specVersion>
+	
+	<actionList>
+		<action>
+			<name>GetInstalledApps</name>
+			<argumentList>
+				<argument>
+					<name>apps</name>
+					<direction>out</direction>
+					<relatedStateVariable>installedApps</relatedStateVariable>
+				</argument>
+			</argumentList>
+		</action>
+	</actionList>
+
+	<serviceStateTable>
+		<stateVariable sendEvents="no">
+			<name>installedApps</name>
+			<dataType>string</dataType>
+			<defaultValue>&quot;{}&quot;</defaultValue>
+		</stateVariable>		
+	</serviceStateTable>
+</scpd>

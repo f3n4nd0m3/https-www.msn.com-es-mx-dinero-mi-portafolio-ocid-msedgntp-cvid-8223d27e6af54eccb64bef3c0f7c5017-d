@@ -1,0 +1,412 @@
+﻿<html>
+<head>
+    <style>
+        html {
+            background-color: transparent;
+            overflow: hidden;
+        }
+
+        html[lang="th"] * {
+            font-family: Tahoma !important; 
+        } 
+
+        button {
+            background-image: none;
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
+        }
+
+        body.simple-window {
+            behavior: text-localization sample-data-source drag-window;
+            font-family: "Segoe UI", Arial;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            width: 960dip;
+            height: 640dip;
+            color: #404040;
+            margin: 15dip;
+            box-shadow: 0 0 15dip rgba(0,0,0,.3);
+        }
+
+        .header {
+            height: 32dip;
+            flow: horizontal;
+            behavior: drag-window;
+            background-color: #f2f2f2;
+            background-image: url(../images/b-icon-popup.svg);
+            /* background-image: url(d:/cl/ProductAgent/images/b-icon-popup.svg); */
+            background-repeat: no-repeat;
+            background-size: 20dip;
+            background-position: 16dip 50%;
+        }
+
+        .page-title {
+            font-size: 13dip;
+            height: 32dip;
+            margin-left: 44dip;
+            vertical-align:middle;
+            color: #000;
+            width: min-intrinsic;
+            white-space: nowrap;
+        }
+
+        .win-controls {
+            height: 32dip;
+            white-space: nowrap;
+            width: min-intrinsic;
+            margin-left: auto;
+            width: 100dip;
+            text-align: right;
+
+        }
+
+
+
+        button.close {
+            width: 32dip;
+            height: 32dip;
+            margin: 0;
+            padding: 0;
+            foreground-size: 13dip;
+            margin-right: 2dip;
+            background-image:none;
+            foreground-image: url(../images/btn-close.svg);
+            /* foreground-image: url(d:/cl/ProductAgent/images/btn-close.svg); */
+            foreground-repeat: no-repeat;
+            foreground-position: center center; 
+            foreground-size: 10dip;
+        }
+
+        button.minimize {
+            height: 32dip;
+            width: 32dip;
+            padding: 0;
+            margin: 0;
+            background-image: none;
+            line-height: 0;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        button.minimize .before {
+            margin: 0;
+            width: 16dip;
+            height: 1dip;
+            background-color: #9b9b9b;
+            position: absolute;
+            display: block;
+            left: 14dip;
+            top: 15dip;
+            line-height: 0;
+        }
+
+        .main-container {
+            height: 100%%;
+        }
+
+        .content {
+            text-align:center;
+            height: 100%%;
+            background-position-top: -31dip;
+            background-image: url(../images/pattern.png);
+            /* background-image: url(d:/cl/ProductAgent/images/pattern.png); */
+            background-repeat: no-repeat;
+            background-size: 960dip auto;
+            overflow: hidden;
+        }
+
+        .title, .title-prep {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-size: 34dip;
+            line-height: 40dip;
+            margin-top: 88dip;
+            color: #000;
+        }
+        .title-prep {
+            margin-top: 378dip;
+            border: 1px solid transparent;
+        }
+
+        .status {
+            font-size: 15dip;
+            margin-top: 29dip;
+        }
+
+        .slow-connection {
+            color: #d38b04;
+            font-size: 16dip;
+            margin-left: 8dip;
+            padding-left: 30dip;
+            background-image: url(../images/icon_warning_slow_connection.svg);
+            /* background-image: url(d:/cl/ProductAgent/images/icon_warning_slow_connection.svg); */
+            background-size: 20dip 18dip;
+            background-position: 0 50%;
+            background-repeat : no-repeat;
+            width: min-intrinsic;
+            white-space:nowrap;
+        }
+
+        .slow-connection[hidden] {
+            visibility:collapse;
+        }
+
+        .logo {
+            foreground-image: url(../images/b-icon-popup.svg);
+            /* foreground-image: url(d:/cl/ProductAgent/images/b-icon-popup.svg); */
+            foreground-repeat: no-repeat;
+            foreground-position: 50% 0;
+            foreground-size: 41dip;
+            width: 60dip;
+            height: 60dip;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 46dip;
+            background-image: url(../images/logo-shadow.png);
+            /* background-image:url(d:/cl/ProductAgent/images/logo-shadow.png); */
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: 46dip;
+        }
+
+        .logo-big {
+            foreground-image: url(../images/b-icon-popup.svg);
+            /* foreground-image: url(d:/cl/ProductAgent/images/b-icon-popup.svg); */
+            foreground-repeat: no-repeat;
+            foreground-position: 50% 0;
+            foreground-size: 120dip;
+            width: 160dip;
+            height: 160dip;
+            margin: 0 auto;
+            position: absolute;
+            top: 187dip;
+            background-image: url(../images/logo-shadow.png);
+            /* background-image:url(d:/cl/ProductAgent/images/logo-shadow.png); */
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            background-size: 138dip;
+        }
+
+        .round-progress {
+            background: none;
+            overflow: visible;
+            size: 150dip;
+            foreground-image: none;
+            prototype: RoundProgress;
+            list-style-image: none;
+            margin: 46dip;
+        }
+
+        .round-progress[value="100"] {
+            foreground-image: url(../images/check-round-progress.svg);
+            /* foreground-image:url(d:/cl/ProductAgent/images/check-round-progress.svg); */
+            foreground-size: 46dip 36dip;
+            foreground-repeat: no-repeat;
+            foreground-position: 50% 50%;
+            prototype: none;
+            border: 8dip solid #34c749;
+            border-radius: 50%;
+            size: 120dip; 
+        }
+
+        .progress-wrapper {
+            border: 1dip solid #f7f7f7;
+            width: min-content;
+            margin: 32dip auto 48dip auto;
+            overflow: visible;
+            vertical-align: middle;
+            position: relative;
+            border: none; 
+        }
+
+        .progress-wrapper .anim {
+            prototype: Anim;
+            position: absolute;
+            top: 0;
+            left: 0;
+            size: 242dip; 
+        }
+
+        div[step] {
+            display:none;
+            height: 100%%;
+        }
+
+        body[current_step="1"] div[step="1"],
+        body[current_step="2"] div[step="2"],
+        body[current_step="3"] div[step="3"] {
+            display:block;
+        }
+
+        body[current_step="3"] .win-controls {
+            display:none;
+        }
+
+        .preparing {
+            background-position-top: -31dip;
+            background-image: url(../images/pattern2.png);
+            /* background-image: url(d:/cl/ProductAgent/images/pattern2.png); */
+            background-repeat: no-repeat;
+            background-size: 960dip auto;
+
+        }
+    </style>
+    <script type="text/tiscript">
+        class RoundProgress : Behavior {
+            function attached() {
+                this.paintContent = this.paint;
+            }
+        
+            function paint(gfx) {
+                /*
+                if(this.value == 100) {
+                    this.@["value"] = 100;
+                    return;
+                } else if (this.@["value"] == 100) { //reset value attribute, because "100" image is permanent after value == 100
+                    this.@["value"] = 0;
+                    return;
+                }*/
+
+                var bgrColor = color(0xAD, 0xAF, 0xB2);
+                var fgrColor = color(0x46,0x88, 0xd7);
+                var txtColor = color(0x28,0x28, 0x28);
+                var cropColor = color(0xFF, 0xFF, 0xFF);
+                var rap = 22;
+        
+                if(this.@["bg"]) bgrColor = color(this.@["bg"]);
+                if(this.@["crop"]) cropColor = color(this.@["crop"]);
+                if(this.@["fg"]) fgrColor = color(this.@["fg"]);
+                if(this.@["txt"]) txtColor = color(this.@["txt"]);
+                if(this.@["rap"]) rap = this.@["rap"].toInteger();
+        
+                //var val = this.value;
+                var val = this.@["value"].toInteger();
+                var circ = Math.PI * 2;
+                var quart = Math.PI / 2;
+                var (x1, y1, x2, y2) = this.box(#rect, #border, #self);
+        
+                var w = (x2-x1)/2;
+                var h = (y2-y1)/2;
+        
+                gfx.fillColor(bgrColor);
+                gfx.ellipse(w, h, w, h);
+                gfx.fillColor(fgrColor);
+                gfx.arc(w, h, w, h, -quart, circ * val/100);
+                gfx.fillColor(cropColor);
+                gfx.ellipse(w, w, w-w/rap, h-w/rap);
+        
+                if(this.@["no-text"]!="true") {
+                    var tx = new Graphics.Text(val.toInteger()+"%");
+                    tx.font("Segoe UI Semilight", 54, false);
+                    gfx.drawText(tx, w, h, txtColor, 5);
+                }
+                return true;
+            }
+        }
+        
+        class Anim:Behavior {
+            var count = 0;
+            var step = 0;
+            var total_steps = 48.0;
+            var duration = 2400ms / total_steps;
+            var lines_count = 3;
+            //var scaleStart = 0.615;
+            var scaleStart = 0.590;
+            var scaleEnd = 1;
+            var line_start_steps = [];
+            var line_steps = [];
+            var progress;
+            var stop = false;
+        
+            function attached() {
+                progress = this.parent.$(progress);
+        
+                this.paintContent = this.paint;
+                this.timer(duration, seq);
+                  
+                for (var i = 0; i < lines_count; ++i) {
+                    line_start_steps[i] = i * total_steps / lines_count;
+                    line_steps[i] = -1;
+                }
+            }
+        
+            function seq() {
+                if(stop) {
+                    return false;
+                }
+                if (step < total_steps) {
+                    ++step;
+                }
+        
+                for (var i = 0; i < lines_count; ++i) {
+                    if (line_steps[i] != -1 || (line_steps[i] == -1 && step >= line_start_steps[i])) {
+                        ++line_steps[i];
+                        if (line_steps[i] > total_steps) {
+                            line_steps[i] = 0;
+                        }
+                    }
+                }
+                this.refresh();
+                return true;
+            }
+            
+            function paint(gfx) {
+                var (x1, y1, x2, y2) = this.box(#rect, #border, #self);
+                var w = (x2-x1)/2;
+                var h = (y2-y1)/2;
+        
+                for (var i = 0; i < lines_count; ++i) {
+                    if (line_steps[i] != -1)  {
+                        var scale = scaleStart + (scaleEnd - scaleStart) * line_steps[i] / total_steps;
+                        var bgrColor = Graphics.RGBA(0xAD, 0xAF, 0xB2, 1.0 - (line_steps[i] / total_steps));
+                        gfx.lineColor(bgrColor).lineWidth(1).noFill().ellipse(w, h, h * scale);
+        
+                        // stop if progress is 100%
+                        if(scale > 0.98 && progress.value == 100) {
+                            stop = true;
+                        }
+                    }
+                }
+            }
+        }
+       
+    </script>
+</head>
+<body class="simple-window" current_step="1">
+    <div id="download" class="main-container">
+        <div class="header">
+            <div class="page-title" id="pageTitle" ids="IDS_PRODUCT_NAME">_Bitdefender 2019</div>
+            <div class="win-controls">
+                <button id="btnSysMinimize" class="minimize"><span class="before"></span></button>
+                <button id="btnSysClose" class="close"></button>
+            </div>
+        </div>
+		
+		<div class="content">
+            <div step="1">
+    			<div class="title" id="ctrlTitle" ids="IDS_PROGRESS_TITLE">_Downloading Bitdefender Product</div>
+                <div class="status">
+                    <span id="ctrlText">174 MB of 600 MB at 772 KB / Sec</span>
+                    <span id="slow_connection" class="slow-connection" ids="IDS_PROGRESS_SLOW_NET_CONN" hidden>_Slow internet connection</span>
+                </div>
+                <div class="progress-wrapper">
+                    <div class="anim"></div>
+                    <progress id="ctrlProgress" class="round-progress" max="100" value="0" fg="#e42822"/>
+                </div>
+                <div class="logo"></div>
+            </div>
+
+            <div id="preparing" step="2" class="preparing">
+                <div class="logo-big"></div>
+                <div class="title-prep" id="ctrlPreparingText" ids="IDS_PREPARING_TEXT">_Preparing Bitdefender Product</div>
+            </div>
+    
+            <div id="install" step="3" class="setup-placeholder">
+                
+            </div>
+		</div>
+	</div>
+</body>
+</html>

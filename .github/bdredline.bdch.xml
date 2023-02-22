@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <bdch>
+	<KeepDumps>0</KeepDumps>									
+    <StartBDReinit>0</StartBDReinit>							
+	<BDReinitPath>bdreinit.exe</BDReinitPath>					
+	<BDncPath>bdnc.dll</BDncPath>							
+	<PassUnhandledExceptionToOS>0</PassUnhandledExceptionToOS>
+    <UseWer>0</UseWer>
+  </bdch>
+  <bdreinit>
+	<ProductIdentifier>2748</ProductIdentifier>
+	<RestartCrashNumber>3</RestartCrashNumber>				
+    <BDSubWizPath>TestCrashDumpSubmit.exe</BDSubWizPath>	
+    <DumpPath>C:\Users\TestAdmin\Desktop\bdch</DumpPath>	
+	<DontSubmitDumps>0</DontSubmitDumps>					
+    <Lang>en</Lang>										
+    <Email>bdch@bitdefender.com</Email>						
+    <LiveSrvPath>SOFTWARE\BitdefenderBox\Livesrv</LiveSrvPath>
+    <SilentSubmit>1</SilentSubmit>
+	<AnonId></AnonId>
+	<AppId>com.bitdefender.cl</AppId>
+	<Fingerprint>HKLM\Software\Bitdefender\Fingerprint</Fingerprint>
+	<BdecPath></BdecPath>
+	<BdecSettingsFileName>bdch_bdec.ini</BdecSettingsFileName>
+	<SubmitCrashEvent>0</SubmitCrashEvent>
+	<CompanyName>Bitdefender</CompanyName>	
+  </bdreinit>
+</settings>

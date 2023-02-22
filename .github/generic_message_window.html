@@ -1,0 +1,265 @@
+﻿<html>
+    <head>
+        <style>
+		    body[buttons]                           button[class="std-btn"]  { display: none; }
+			body[buttons]                           button[class="primary-btn"]  { display: none; }
+
+    		body[buttons="OK"]                      button[id~="btnOK"],
+
+    		body[buttons="OKCancel"]                button[id~="btnOK"],
+		    body[buttons="OKCancel"]                button[id~="btnCancel"],
+
+		    body[buttons="AbortRetryIgnore"]        button[id~="btnAbort"],
+		    body[buttons="AbortRetryIgnore"]        button[id~="btnRetry"],
+		    body[buttons="AbortRetryIgnore"]        button[id~="btnIgnore"],
+
+		    body[buttons="YesNoCancel"]             button[id~="btnYes"],
+		    body[buttons="YesNoCancel"]             button[id~="btnNo"],
+		    body[buttons="YesNoCancel"]             button[id~="btnCancel"],
+
+		    body[buttons="YesNo"]                   button[id~="btnYes"],
+		    body[buttons="YesNo"]                   button[id~="btnNo"],
+
+		    body[buttons="RetryCancel"]             button[id~="btnRetry"],
+		    body[buttons="RetryCancel"]             button[id~="btnCancel"],
+
+		    body[buttons="CancelRetryContinue"]     button[id~="btnCancel"],
+		    body[buttons="CancelRetryContinue"]     button[id~="btnRetry"],
+		    body[buttons="CancelRetryContinue"]     button[id~="btnContinue"],
+
+
+			body[buttons="SwitchAccountAbort"]     button[id~="btnSwitchAccount"],
+		    body[buttons="SwitchAccountAbort"]     button[id~="btnAbort"],
+
+
+		    body[buttons="NoButtons"] {
+                display: inline-block;
+            }
+
+            body[icon]              div[icon_type]  { display: none; }
+
+            body[icon="Question"]   div[icon_type~="Question"],
+		    body[icon="Error"]      div[icon_type~="Error"],
+		    body[icon="Warning"]    div[icon_type~="Warning"],
+			body[icon="Autopilot"]    div[icon_type~="Autopilot"],
+			body[icon="Loading"]    div[icon_type~="Loading"],
+		    body[icon="Info"]       div[icon_type~="Info"] {
+                display: block;
+            }
+
+            html {
+                background-color: transparent;
+                overfow: hidden;
+            }
+
+            html[lang="th"] * {
+                font-family: Tahoma !important; 
+            } 
+
+            .alert-window {
+                behavior: text-localization drag-window;
+                background: #fff;
+                margin:0;
+                padding:0;
+                font-family:"Segoe UI ", Arial, sans-serif;
+                font-size: 13dip;
+                min-width:416dip;
+                overflow:hidden;
+                height: min-intrinsic;
+                position: relative;
+                width: 416dip;
+                min-height: 100dip;
+                margin: 15dip;
+                box-shadow: 0 0 15dip rgba(0,0,0,.3);
+
+            }
+            
+            .horizontal {
+                flow: horizontal;
+                position: relative;
+            }
+
+            .icon {
+                height: 90dip;
+                width: 90dip;
+                margin: 30dip;
+            }
+
+
+            button {
+                background-image: none;
+                padding: 0;
+            }
+
+            button.popup_close {
+                width: 16dip;
+                height: 16dip;
+                padding: 0;
+                margin: 0;
+                background-image:none;
+                /* foreground-image: url(d:/cl/ProductAgent/images/btn-close.svg); */
+                foreground-image: url(../images/btn-close.svg);
+                foreground-repeat: no-repeat;
+                foreground-position: center center;
+                foreground-size: 8dip;
+                cursor: pointer;
+                position: absolute;
+                z-index: 400;
+                right: 4dip;
+                top: 4dip;
+            }
+
+            .alert_icon_container {
+                width: 96dip;
+                display: block;
+                background-color: #f2f2f2;
+                height: 100%%;
+                margin: 0;
+            }
+
+            .icon {
+                width: 44dip;
+                height: 44dip;
+                margin: 24dip auto 0 auto;
+                /* background-image: url(d:/cl/ProductAgent/images/b-icon-popup.svg); */
+                background-image: url(../images/b-icon-popup.svg);
+                background-size: 44dip;
+                background-repeat: no-repeat;
+                position: relative;
+                overflow: visibe;
+                position: relative;
+                box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.12);
+                border-radius: 10dip;
+
+            }
+            .bdui_icon_critical > div,
+            .bdui_icon_question > div {
+                position: absolute;
+                height: 26dip;
+                width: 26dip;
+                foreground-repeat: no-repeat;
+                foreground-size: 26dip;
+                overflow: hidden;
+                left: 26dip;
+                top: 26dip;
+            }
+
+            .bdui_icon_critical > div {
+                /* foreground-image: url(d:/cl/ProductAgent/images/icon-warning.svg); */
+                foreground-image: url(../images/icon-warning.svg);
+            }
+
+            .bdui_icon_question > div {
+                foreground-image: url(../images/dialog_confirm.svg);
+                /* foreground-image: url(d:/cl/ProductAgent/images/dialog_confirm.svg); */
+
+            }
+
+            .alert_title {
+                font-size:15dip;
+                color: #000;
+                font-weight: bold;
+                margin-bottom: 4dip;
+            }
+
+            .text-container {
+                padding: 12dip 16dip 16dip 16dip;
+                width: 100%%;
+                height: 100%%;
+            }
+
+            .message_text {
+                font-size: 13dip;
+                line-height: 1.23em;
+                color: #404040;
+            }
+
+            .alert_footer {
+                padding: 0;
+                margin-top: 16dip;
+            }
+
+            .primary-btn {
+                height: 26dip;
+                font-family: "Segoe UI Semilight", Arial, sans-serif;
+                font-size: 13dip;
+                color: #fff;
+                text-transform: uppercase;
+                min-width: 100dip;
+                padding: 0 16dip;
+                line-height: 26dip;
+                border-radius: 4dip;
+                cursor: pointer;
+                display: inline-block;
+                transition: none;
+                margin-right: 6dip;
+            }
+
+            .primary-btn {
+                background-color: #0078d7;
+            }
+
+            .primary-btn:hover {
+                background-color: #0f50a8;
+            }
+
+            .primary-btn:active {
+                background-color: #0d438f;
+            }
+
+            .std-btn {
+                height: 24dip;
+                font-family: "Segoe UI", Arial, sans-serif;
+                font-size: 13dip;
+                color: #282828;
+                text-transform: uppercase;
+                min-width:100dip;
+                padding: 0 16dip;
+                line-height: 24dip;
+                border-radius: 4dip;
+                cursor: pointer;
+                display: inline-block;
+                border: 1dip solid #000;
+                transition: none;
+            }
+
+            .std-btn:hover {
+                background-color: #0078d7;
+                color: #ffffff;
+                border-color: #0078d7;
+            }
+
+            .std-btn:active {
+                background-color: #0068bd;
+                border-color: #0068bd;
+                color: #fff;
+            }
+
+
+        </style>
+    </head>
+    <body id="body" round="14" class="alert-window" buttons="OKCancel" icon="Question">
+            <button id="btnSysClose" class="popup_close"></button>
+        <div class="horizontal">
+            <div .alert_icon_container>
+                <div class="bdui_icon_critical icon" icon_type="Error"><div/></div>
+                <div class="bdui_icon_question icon" icon_type="Question"><div/></div>
+            </div>
+            <div class="text-container">
+                <div class="alert_title" id="alert_title">Bitdefender Total Security</div>
+                <div id="messagebox_message" class="message_text" >Are you sure  tdasdads?<span id="upload_text"></span></div>
+                <div class="alert_footer">
+                    <button class="primary-btn" id="btnSwitchAccount" ids="IDS_SWITCH">_Switch Account</button>
+                    <button class="primary-btn" id="btnYes" ids="IDS_YES">_Yes</button>
+                    <button class="std-btn" id="btnNo" ids="IDS_NO">_No</button>
+                    <button class="primary-btn" id="btnOK" ids="IDS_OK">_OK</button>
+                    <button class="std-btn" id="btnAbort" ids="IDS_ABORT">_Abort</button>
+                    <button class="primary-btn" id="btnRetry" ids="IDS_RETRY">_Retry</button>
+                    <button class="std-btn" id="btnCancel" ids="IDS_CANCEL">_Cancel</button>
+                    <button class="std-btn" id="btnIgnore" ids="IDS_IGNORE">_Ignore</button>
+                    <button class="primary-btn" id="btnContinue" ids="IDS_CONTINUE">_Continue</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
