@@ -1,0 +1,161 @@
+{
+    "files": [
+        {
+            "local_path": "ace.am",
+            "sha256": "b577f8a1667d67ef66445bd405ed26a057f8d77180d3f3264d6a1da691838abe",
+            "md5": "6c9d8024bb5b90719209813c8e4ea086",
+            "url": "/v2/repository/6/C/9/D/ace.am.6c9d8024bb5b90719209813c8e4ea086.gzip",
+            "size": 214478
+        },
+        {
+            "local_path": "arj.am",
+            "sha256": "c5a96f14891d296d522afb1272c91ddc18411e489fdbb1b21125cb2ec2f2e9ea",
+            "md5": "dc661bde0f1f085e73f46efed629dff1",
+            "url": "/v2/repository/D/C/6/6/arj.am.dc661bde0f1f085e73f46efed629dff1.gzip",
+            "size": 205135
+        },
+        {
+            "local_path": "asconf.ini",
+            "sha256": "0fc01b7550d6c4d35f142bca88464f649a035f1859cbe74216c99935f08fea20",
+            "md5": "2f766e9bfb117bc2548c4569d77efad4",
+            "url": "/v2/repository/2/F/7/6/asconf.ini.2f766e9bfb117bc2548c4569d77efad4.gzip",
+            "size": 1071
+        },
+        {
+            "local_path": "ascore.dll",
+            "sha256": "730d44804c42e3ed3ba169ddbbd99a8899d72678f486df2133140945c1b81c11",
+            "md5": "c69af1801ba7cdd3fa5bd3c2676be7a1",
+            "url": "/v2/repository/C/6/9/A/ascore.dll.c69af1801ba7cdd3fa5bd3c2676be7a1.gzip",
+            "size": 489771
+        },
+        {
+            "local_path": "asemlrtr.mdl",
+            "sha256": "fd79e3aa2d1cd44d52e5612846908d6add44e5d92c2a14627db3dccfd8bb9bde",
+            "md5": "e4fc0c4c1a82386a112be4f67851576c",
+            "url": "/v2/repository/E/4/F/C/asemlrtr.mdl.e4fc0c4c1a82386a112be4f67851576c.gzip",
+            "size": 1391298
+        },
+        {
+            "local_path": "asemlthin.mdl",
+            "sha256": "8a691e45de237fd691b06167d5ae79020d9b9d92d7fd642eee6b6e803d7c4472",
+            "md5": "2712a3c961cef211c8fb4e48845bcf0c",
+            "url": "/v2/repository/2/7/1/2/asemlthin.mdl.2712a3c961cef211c8fb4e48845bcf0c.gzip",
+            "size": 1841284
+        },
+        {
+            "local_path": "asextract.ini",
+            "sha256": "2fa03c2bb504e4c91991f1363d9b9b3d0777f1d6f1c5265ed1a355121492e70e",
+            "md5": "3479c0cbeecaf01d04eddd01ae5d3cf6",
+            "url": "/v2/repository/3/4/7/9/asextract.ini.3479c0cbeecaf01d04eddd01ae5d3cf6.gzip",
+            "size": 1889
+        },
+        {
+            "local_path": "asmcocr.dll",
+            "sha256": "6a827809e20345254ce7bee066378db10dfe9fe629abc3e8517f6a9ec1cb099d",
+            "md5": "ad89bcb7cc4a29a3e88752d3969c115b",
+            "url": "/v2/repository/A/D/8/9/asmcocr.dll.ad89bcb7cc4a29a3e88752d3969c115b.gzip",
+            "size": 590273
+        },
+        {
+            "local_path": "asregex.dll",
+            "sha256": "6e0a17c4858092e90f74441fe41e21c6569104f85833ddd3df025c80f7b4948e",
+            "md5": "960bc8ba7b8cf2927e81a35462e89ad3",
+            "url": "/v2/repository/9/6/0/B/asregex.dll.960bc8ba7b8cf2927e81a35462e89ad3.gzip",
+            "size": 303161
+        },
+        {
+            "local_path": "asunicode.dll",
+            "sha256": "b95a1dd17fddbbebdf61144411d09d2b13cf66ff79287e5cd35d28e110b6ac57",
+            "md5": "043216ee0e5edf36c90f0a2ae5347c96",
+            "url": "/v2/repository/0/4/3/2/asunicode.dll.043216ee0e5edf36c90f0a2ae5347c96.gzip",
+            "size": 1579118
+        },
+        {
+            "local_path": "bdnc.dll",
+            "sha256": "a6325461c367bd1903dce8c6e82f86566f012054d0f4107e4f794c343945d3fa",
+            "md5": "46919b1c2feb013aedb3d5b739b97221",
+            "url": "/v2/repository/4/6/9/1/bdnc.dll.46919b1c2feb013aedb3d5b739b97221.gzip",
+            "size": 1227205
+        },
+        {
+            "local_path": "bdnc.ini",
+            "sha256": "c7890b7aa3fbe8aaef3cffd4215b870489a54c9e450b1a91a8021d48be3547ba",
+            "md5": "153e80b1ec9baec5619aceebfde340c6",
+            "url": "/v2/repository/1/5/3/E/bdnc.ini.153e80b1ec9baec5619aceebfde340c6.gzip",
+            "size": 116
+        },
+        {
+            "local_path": "cab.am",
+            "sha256": "86068f00542c9b4a00d6ae907eb0bf7521bd7a2e11d925f26d98c54a4e0c1866",
+            "md5": "d2adb11a32d5f970238a3de7063a5c35",
+            "url": "/v2/repository/D/2/A/D/cab.am.d2adb11a32d5f970238a3de7063a5c35.gzip",
+            "size": 231765
+        },
+        {
+            "local_path": "gzip.am",
+            "sha256": "33df96678ff8aa471f21fc9b796d9301a3bf8b858a3ab689e64f8eb0ed7fb75e",
+            "md5": "a155bd7c6ee07b69c222c671884aa0ea",
+            "url": "/v2/repository/A/1/5/5/gzip.am.a155bd7c6ee07b69c222c671884aa0ea.gzip",
+            "size": 227582
+        },
+        {
+            "local_path": "iso.am",
+            "sha256": "9cd23adf9177bac7dee257a378fe262001cc2c770e5f59acfecf8d62c9342c18",
+            "md5": "1e0cb82c8838f95c998e552bfe3903cc",
+            "url": "/v2/repository/1/E/0/C/iso.am.1e0cb82c8838f95c998e552bfe3903cc.gzip",
+            "size": 282102
+        },
+        {
+            "local_path": "lha.am",
+            "sha256": "fa08b2654058f999f31ef4a0fe5a93d16c48cbbfe95fe1415b96fd8c9c5d2d46",
+            "md5": "a76d26143651d19821963259d0fdfbf3",
+            "url": "/v2/repository/A/7/6/D/lha.am.a76d26143651d19821963259d0fdfbf3.gzip",
+            "size": 202198
+        },
+        {
+            "local_path": "mimepack.dll",
+            "sha256": "ed39783c48b9a7aa0b18d13e29e78a2452f0e62068babe6db2213463cb8fe5b0",
+            "md5": "7c364093480114199a9198487e12dc96",
+            "url": "/v2/repository/7/C/3/6/mimepack.dll.7c364093480114199a9198487e12dc96.gzip",
+            "size": 169914
+        },
+        {
+            "local_path": "minicore.dll",
+            "sha256": "4b39bea40a8732d65350911948dc876f6d37ee58424d09d5acc15b283ef15c55",
+            "md5": "e392cbf6a5e12a4cbe5a7076da60981e",
+            "url": "/v2/repository/E/3/9/2/minicore.dll.e392cbf6a5e12a4cbe5a7076da60981e.gzip",
+            "size": 19383
+        },
+        {
+            "local_path": "rar.am",
+            "sha256": "2477ec496793123ee42dfaae2ecadcd2db5679d521230165c41a5196a0500422",
+            "md5": "8dd5dc092b53b41ca5448f9dfbeedbce",
+            "url": "/v2/repository/8/D/D/5/rar.am.8dd5dc092b53b41ca5448f9dfbeedbce.gzip",
+            "size": 283469
+        },
+        {
+            "local_path": "rvd.dll",
+            "sha256": "8dba2a5064be8c2f5f95a2e7844696ded73b7007af3bf4df9f09371fd71465f5",
+            "md5": "5dafdc05774007b20bfae64bbea2c362",
+            "url": "/v2/repository/5/D/A/F/rvd.dll.5dafdc05774007b20bfae64bbea2c362.gzip",
+            "size": 358493
+        },
+        {
+            "local_path": "tar.am",
+            "sha256": "d7b710aeb04ff56a6a08d3fb99fe21a251a0bcc077f4af04a2c1205dc7f76cbe",
+            "md5": "e96ca53be3bae9496dc6476e28bf668f",
+            "url": "/v2/repository/E/9/6/C/tar.am.e96ca53be3bae9496dc6476e28bf668f.gzip",
+            "size": 198462
+        },
+        {
+            "local_path": "z.am",
+            "sha256": "224417863e118c74221e946f29db98f4347d24244d85ab97b5f275177b4fbf08",
+            "md5": "f85e0d648b85bb19cea0e483fe60ab18",
+            "url": "/v2/repository/F/8/5/E/z.am.f85e0d648b85bb19cea0e483fe60ab18.gzip",
+            "size": 195649
+        }
+    ],
+    "to_remove": [],
+    "update_version": 6547,
+    "epochtime": 1669186798
+}

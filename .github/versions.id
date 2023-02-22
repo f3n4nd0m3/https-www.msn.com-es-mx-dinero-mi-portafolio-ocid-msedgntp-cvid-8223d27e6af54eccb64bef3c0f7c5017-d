@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<info>   <all><id value="6547" /><md5 value="28cf9573a6456b00fc90cd9be7cff0eb" /></all>
+
+<sig>FYXLwU5PDR221UzE0XW5NEYU4TCNFb+W5EFXm00v66bie+hkafjFI5UxOZGqUDkTEZ8rWBIXwc8WAqcyMQBkI0lBMfiG+0gWTWrp7zm93uXGP1Z9/tdzS704LnNusXlDhMy/2OA4z7JefmW8/jQzsBv4IXqE4IUs5PBklqSNIEVyrRF7rlSMeCNZzxPDh2pFdSBlRj1Xap52i3CbD0l5I/S/T0BWhFmTG0vsEBcQvvjsaEhPYHYQ+X2EdtI382APAprKpAEnjaI0E8IVM+kj6tHhAT2RrO3SqjeWMH8Bd6xZAbR0qmKKn+ZavEvM+cIwP7HhO3WsF5AobypIuFDLyw==</sig>
+
+<sig2>RlEGKy2KI6RdvdPhXFIaE+M2zWkqTAw0tr4m8blSmgFYxBxLEfjsY4QSJDioC+jxA9OYbqKD6gL620QnnHLEEvXikdQO0K6XuDP1WQRl0b455bAxzMiHsGtkwA26q7vku8x20lLNcLv1y4IGVQSYNHIdV99U2Bf3BhZsrmMHM4JFCUsmEfRAdVjJ4Ijf2Y3cGo4D2rYlWvLa0z7JPy502nllVoK5HWLmbYe19tjudzxrIz8U2Ph2SISPCHYfoA4LGuZzUcyxwOC0dpzVMjteDk4k+PmXxo65JLWwg7vq2sPnVrRVDvJUNV0U05D04kz7uxDT0CAFN7jpZdtbYYVJFZK6Q37x1nunzNSvK9mLBJH237YpLKUbaBLR6DBgp5/6PZm/QG4pZvdKuELj4kkzfEtAl/lzNbPLtpPMDTCnA5QflBBkj3whK3nk30ka6v/qUvUs504uTV9pUjPJuYiZJwM7wCa86SkuobkWiS0AhfjbuvbIiY8UX6YG+Is7WZ09W6tVrWKBwLpYFrPX6K2rE0ikB4zGzoMnp0Rzj7YstLP2yAc1ctfPV1G6YO2SEXaxsRuDLKjyVqRRMO726qc49xJAuY7ciStgBrQdn7uILzSk12Vpfdp6z0jyCVNOLQN/JUN8PQCRP1aeAXDBmT0+MyUt2HoTI2cOMXUsHzdWDho=</sig2>
+   <time value="1669186798">2022-11-23 08:59:58</time>
+   <type val="2" />
+   <v3 id_path="v2/repository/6/8/0/A/versions3.id.680a77d4f5f948a9b8e6a00ffadad94a.gzip" dat_path="v2/repository/C/6/2/A/versions3.dat.c62a1d37afab7bf18a40fed2bb96302b.gzip" sig_path="v2/repository/A/8/9/A/versions3.sig.a89ab73bd58cdd87f38d8a6f85ea3273.gzip"/>
+</info>

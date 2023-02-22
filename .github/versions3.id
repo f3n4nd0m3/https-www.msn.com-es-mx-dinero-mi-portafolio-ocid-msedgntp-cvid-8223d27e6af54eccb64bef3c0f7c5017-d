@@ -1,0 +1,9 @@
+{
+    "epochtime": 1669186798,
+    "update_version": 6547,
+    "dat_url": "/v2/repository/C/6/2/A/versions3.dat.c62a1d37afab7bf18a40fed2bb96302b.gzip",
+    "dat_sha256": "f2aeee369f3456816fcf0a4352fdf80c04e15a5f1738588f98ae53dfad850c6a",
+    "dat_md5": "c62a1d37afab7bf18a40fed2bb96302b",
+    "dat_size": 2117,
+    "sig_url": "/v2/repository/6/8/0/A/versions3.sig.680a77d4f5f948a9b8e6a00ffadad94a.gzip"
+}
